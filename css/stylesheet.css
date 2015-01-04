@@ -44,25 +44,35 @@ ol, ul {
 /* Start of Custom Styles */
 .content {
     padding: 0px 15px;
-    margin: 0 auto;
-    width: 970px;
     -webkit-font-smoothing: antialiased;
 }
+
 /* Navigation Section */
 .top-navigation {
-	background-color: #fff;
-	font-family: "Roboto", sans-serif;
+    background-color: #fff;
 	font-size: 16px; 
 	color: #838994; 
 	letter-spacing: 0.03em;
+    position:fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.top-navigation > .content{
+    margin: 0 auto;
+    width: 970px;
+    height: 70px;
+}
+.top-navigation .logo{
+    height: 70px;
 }
 
 .top-navigation .links {
     float: right;
     font-family: 'Roboto', sans-serif;
     color: #838994;
-    font-size: 16px;
+    font-size: 1.04rem;
     margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
 }
 .top-navigation .links li {
     display: inline-block;
@@ -79,6 +89,8 @@ ol, ul {
 .introduction{
     background-image: url(../images/first-background.jpg);
     background-position: center bottom;
+    background-position-x: 50%;
+    background-position-y: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
@@ -97,7 +109,8 @@ ol, ul {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 300
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
 }
 
 .big-button:hover{
@@ -107,7 +120,7 @@ ol, ul {
 .big-button {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 300;
+    font-weight: lighter;
     color: #fff;
     text-shadow: none;
     border-style: none;
@@ -120,6 +133,40 @@ ol, ul {
     font-size:1.125rem;
     margin: 0 auto;
     display: block;
-    margin-top: 1.563rem
+    margin-top: 1.563rem;
+    -webkit-font-smoothing: antialiased;
+
+}  
+.cases,
+.content {
+    text-align: center;
+    color: #1d1e21;
+    margin-top: 7.875rem;
+    -webkit-font-smoothing: antialiased;
+
+}
+.cases h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+.cases .devices {
+    width: 33.333333%;
+    display:inline-flex;
+    list-style: none;
+    justify-content: space-between;
+    /*styles to assist with debugging*/
+    box-sizing: border-box;
+    height: 4em;
+
+
+}
+.cases .caption{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.563rem;
+    font-weight: 400;
+    margin: 2.5rem 0px 1.875rem;
+}
 
 }
